@@ -136,3 +136,31 @@ readCharacteristic:  0000be82-0000-1000-8000-00805f9b34fb
 - Whether the Ace Pro responds to the same service UUID as the X3
 - Burst photo command byte (not in community docs — needs sniffing)
 - Whether a message counter (SN) is validated by the camera or ignored
+
+---
+
+## Filesystem Scope
+Only read and write files within this project directory.
+Do not access, modify or read files outside of this repository.
+Do not read environment files, dotfiles, or system configuration.
+
+---
+
+## Dependencies
+Do not install packages globally.
+Do not modify system-level configuration.
+Only add dependencies to this project's build files (build.gradle.kts).
+Ask before adding any new third-party library dependency.
+
+---
+
+## Restrictions
+Never delete files without explicit confirmation.
+Never run destructive git operations (force push, rebase, reset --hard) without confirmation.
+Never run the camera's factory reset or SD wipe commands in any test code.
+
+---
+
+## Network
+Only fetch content from URLs explicitly provided in this brief or by me in the session.
+Do not make requests to any other external services.
